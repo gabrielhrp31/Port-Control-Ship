@@ -39,7 +39,7 @@ class Doca {
         }
     }
 
-    public void desempilhaNavio(){
+    public void desempilhaContainer(){
 
     }
 

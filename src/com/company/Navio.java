@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Random;
 
-class Navio {
+public class Navio {
     int id;
     Pilha p1,p2,p3,p4;
     Navio prox;
@@ -44,6 +44,10 @@ class Navio {
             }
             aux--;
         }
+    }
+
+    public Boolean vazio(){
+        return p1.tam==0 && p2.tam==0 && p3.tam==0 && p4.tam==0;
     }
 
 }

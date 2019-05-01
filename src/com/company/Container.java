@@ -1,7 +1,7 @@
 package com.company;
 
-public class Container{
-    Boolean status;
+class Container{
+    private Boolean status;
     Container inferior;
 
     public Container(Boolean status){
