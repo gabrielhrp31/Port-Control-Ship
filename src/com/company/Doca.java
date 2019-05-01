@@ -39,28 +39,35 @@ class Doca {
         }
     }
 
-    public void desempilhaContainer(){
-
+    public void descarregaNavio(){
+        Container desempilhado;
+        if(!this.primeiro.vazio()){
+            this.primeiro.desempilha();
+        }else if(this.primeiro.prox!=null){
+            sai();
+        }
     }
 
     public void showDoca(){
 
         if(vazia()){
-            System.out.println("Doca Vazia");
+            System.out.println("\tDoca Vazia");
         }else{
                 Navio aux = this.primeiro;
-                System.out.println("\t-------------------------------------------");
-                System.out.println("\tId Navio:" + aux.id);
-                System.out.println("\tQuatidade de containers:" + aux.qtdContainers);
-                if(tam!=1){
-                    do{
-                        aux = aux.prox;
-                        System.out.println("\t-------------------------------------------");
-                        System.out.println("\tId Navio:" + aux.id);
-                        System.out.println("\tQuatidade de containers:" + aux.qtdContainers);
-                    }while(aux.prox !=null);
+                while(aux!=null){
+                    System.out.println("\t-------------------------------------------");
+                    System.out.println("\tId Navio:" + aux.id);
+                    System.out.println("\t----------Containers " + aux.qtdContainers+"---------------");
+                    System.out.print("\t\tPilha 1->");
+                    aux.p1.showPilha();
+                    System.out.print("\t\tPilha 2->");
+                    aux.p2.showPilha();
+                    System.out.print("\t\tPilha 3->");
+                    aux.p3.showPilha();
+                    System.out.print("\t\tPilha 4->");
+                    aux.p4.showPilha();
+                    aux = aux.prox;
                 }
-
             System.out.print("\n");
         }
     }

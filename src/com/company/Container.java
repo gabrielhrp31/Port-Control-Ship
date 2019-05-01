@@ -8,4 +8,8 @@ class Container{
         this.status=status;
         this.inferior = null;
     }
+
+    public String getStatus() {
+        return status ? "Cheio":"Vazio";
+    }
 }

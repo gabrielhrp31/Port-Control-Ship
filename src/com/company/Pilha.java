@@ -17,6 +17,10 @@ class Pilha {
         return  this.tam==0;
     }
 
+    public Boolean temEspaco(){
+        return  this.tam<4;
+    }
+
     public void empilha(Container container){
         container.inferior=this.topo;
         this.topo= container;
@@ -24,9 +28,22 @@ class Pilha {
     }
 
 
-
-    public void desempilha(){
+    public Container desempilha(){
+        Container desempilhado = this.topo;
         this.topo=this.topo.inferior;
         this.tam--;
+        return desempilhado;
+    }
+
+    public void showPilha(){
+        Container aux = this.topo;
+        System.out.print("[");
+        while(aux!=null){
+            System.out.print(aux.getStatus());
+            aux=aux.inferior;
+            if(aux!=null)
+                System.out.print(",");
+        }
+        System.out.print("]\n");
     }
 }
