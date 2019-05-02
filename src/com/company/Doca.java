@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Random;
+
 class Doca {
     Navio primeiro, ultimo;
     PilhaDoca pd1,pd2,pd3,pd4,pd5;
@@ -17,7 +19,7 @@ class Doca {
     }
 
     public Boolean vazia(){
-        return tam==0;
+        return this.tam==0;
     }
 
     public void chega(Navio navio){
@@ -33,19 +35,21 @@ class Doca {
 
 
     public void sai(){
-        if(!vazia()) {
-            this.primeiro = this.primeiro.prox;
-            this.tam--;
-        }
+        this.primeiro = this.primeiro.prox;
+        tam--;
     }
 
-    public void descarregaNavio(){
-        Container desempilhado;
-        if(!this.primeiro.vazio()){
-            this.primeiro.desempilha();
-        }else if(this.primeiro.prox!=null){
+    public Boolean descarregaNavio(){
+        Container desempilhado=null;
+        boolean saiu=false;
+        if(this.primeiro.vazio()){
+            saiu=true;
             sai();
+        }else{
+            desempilhado=this.primeiro.desempilha();
         }
+
+        return saiu;
     }
 
     public void showDoca(){
@@ -53,22 +57,21 @@ class Doca {
         if(vazia()){
             System.out.println("\tDoca Vazia");
         }else{
-                Navio aux = this.primeiro;
-                while(aux!=null){
-                    System.out.println("\t-------------------------------------------");
-                    System.out.println("\tId Navio:" + aux.id);
-                    System.out.println("\t----------Containers " + aux.qtdContainers+"---------------");
-                    System.out.print("\t\tPilha 1->");
-                    aux.p1.showPilha();
-                    System.out.print("\t\tPilha 2->");
-                    aux.p2.showPilha();
-                    System.out.print("\t\tPilha 3->");
-                    aux.p3.showPilha();
-                    System.out.print("\t\tPilha 4->");
-                    aux.p4.showPilha();
-                    aux = aux.prox;
-                }
-            System.out.print("\n");
+            Navio aux = this.primeiro;
+            System.out.println("Tamanho da Fila: " +tam);
+            System.out.print("\tFila de Navios: ");
+            while(aux!=null){
+                System.out.print("Navio " + aux.id);
+                aux = aux.prox;
+                if(aux!=null)
+                    System.out.print("->");
+            }
+            System.out.print("\n\n");
+            System.out.println("\t|-----------Descarregando----------------");
+            System.out.println("\t|Id do Navio: "+this.primeiro.id);
+            System.out.println("\t|Containers no Navio: "+this.primeiro.qtdContainers);
+            this.primeiro.showNavio();
+            System.out.println("\t|----------------------------------------");
         }
     }
 }

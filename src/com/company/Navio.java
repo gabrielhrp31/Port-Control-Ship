@@ -41,23 +41,46 @@ public class Navio {
     }
 
     public Boolean vazio(){
-        return p1.tam==0 && p2.tam==0 && p3.tam==0 && p4.tam==0;
+        return qtdContainers==0;
     }
 
     public Container desempilha(){
         Container desempilhado;
-        if(!p1.vazia())
-            desempilhado = p1.desempilha();
-        else if(!p2.vazia())
+        if(!p4.vazia()) {
+            desempilhado = p4.desempilha();
+            qtdContainers--;
+        }else  if(!p3.vazia()) {
+            desempilhado = p3.desempilha();
+            qtdContainers--;
+        }else if(!p2.vazia()) {
             desempilhado = p2.desempilha();
-        else if(!p3.vazia())
-            desempilhado=p3.desempilha();
-        else if(!p4.vazia())
-            desempilhado=p4.desempilha();
-        else
+            qtdContainers--;
+        }else if(!p1.vazia()) {
+            desempilhado = p1.desempilha();
+            qtdContainers--;
+        }else
             desempilhado=null;
 
         return  desempilhado;
+    }
+
+    public void showNavio(){
+        if(!p1.vazia()){
+            System.out.print("\t\t|Pilha 1->");
+            this.p1.showPilha();
+        }
+        if (!p2.vazia()){
+            System.out.print("\t\t|Pilha 2->");
+            this.p2.showPilha();
+        }
+        if(!p3.vazia()){
+            System.out.print("\t\t|Pilha 3->");
+            this.p3.showPilha();
+        }
+        if(!p4.vazia()){
+            System.out.print("\t\t|Pilha 4->");
+            this.p4.showPilha();
+        }
     }
 
 }

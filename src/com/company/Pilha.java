@@ -38,11 +38,15 @@ class Pilha {
     public void showPilha(){
         Container aux = this.topo;
         System.out.print("[");
-        while(aux!=null){
-            System.out.print(aux.getStatus());
-            aux=aux.inferior;
-            if(aux!=null)
-                System.out.print(",");
+        if(tam==0)
+            System.out.print("Pilha Vazia");
+        else {
+            while (aux != null) {
+                System.out.print(aux.getStatus());
+                aux = aux.inferior;
+                if (aux != null)
+                    System.out.print(",");
+            }
         }
         System.out.print("]\n");
     }
