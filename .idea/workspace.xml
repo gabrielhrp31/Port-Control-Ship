@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8b9c513-c305-4317-bef5-ecd286d2c3da" name="Default Changelist" comment="">
+    <list default="true" id="c8b9c513-c305-4317-bef5-ecd286d2c3da" name="Default Changelist" comment="Navios entrando e saindo do porto partindo do princiopio que o porto está cheio no inicio de um Dia">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Container.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Container.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Doca.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Doca.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Navio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Navio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Pilha.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Pilha.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/PilhaDoca.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/PilhaDoca.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Porto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Porto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Doca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Doca.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Navio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Navio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Pilha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Pilha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/PilhaDoca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/PilhaDoca.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Porto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Porto.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,19 +23,45 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Doca.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="126" column="74" selection-start-line="126" selection-start-column="74" selection-end-line="126" selection-end-column="74" />
+              <folding>
+                <element signature="e#2060#2061#0" expanded="true" />
+                <element signature="e#2091#2092#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Doca.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/PilhaDoca.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+            <state relative-caret-position="68">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
               <folding>
-                <element signature="e#319#320#0" expanded="true" />
-                <element signature="e#348#349#0" expanded="true" />
+                <element signature="e#150#151#0" expanded="true" />
+                <element signature="e#185#186#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Pilha.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#233#234#0" expanded="true" />
+                <element signature="e#268#269#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,12 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Navio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-              <folding>
-                <element signature="e#1351#1352#0" expanded="true" />
-                <element signature="e#1422#1423#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-162">
+              <caret line="39" column="9" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="39" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -65,19 +81,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="20" selection-start-column="20" selection-end-column="20" />
-              <folding>
-                <element signature="e#226#227#0" expanded="true" />
-                <element signature="e#255#256#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Porto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="66" column="40" lean-forward="true" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+            <state relative-caret-position="518">
+              <caret line="79" column="35" lean-forward="true" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -99,13 +111,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/company/Lista.java" />
         <option value="$PROJECT_DIR$/src/com/company/Fila.java" />
-        <option value="$PROJECT_DIR$/src/com/company/PilhaDoca.java" />
         <option value="$PROJECT_DIR$/src/com/company/Container.java" />
         <option value="$PROJECT_DIR$/src/com/company/Pilha.java" />
         <option value="$PROJECT_DIR$/src/com/company/Navio.java" />
+        <option value="$PROJECT_DIR$/src/com/company/PilhaDoca.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Doca.java" />
         <option value="$PROJECT_DIR$/src/com/company/Porto.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Doca.java" />
       </list>
     </option>
   </component>
@@ -122,7 +134,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,6 +174,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,7 +224,8 @@
       <workItem from="1556649638730" duration="1333000" />
       <workItem from="1556669910652" duration="4020000" />
       <workItem from="1556731155856" duration="420000" />
-      <workItem from="1556741508915" duration="13236000" />
+      <workItem from="1556741508915" duration="13369000" />
+      <workItem from="1556835969802" duration="3625000" />
     </task>
     <task id="LOCAL-00001" summary="Arrumada função de printar a pilha e os navios e dado inicio a criar a função de descarregar navio">
       <created>1556744396085</created>
@@ -221,17 +234,24 @@
       <option name="project" value="LOCAL" />
       <updated>1556744396085</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Navios entrando e saindo do porto partindo do princiopio que o porto está cheio no inicio de um Dia">
+      <created>1556757768547</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556757768547</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31824000" />
+    <option name="totallyTimeSpent" value="35582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2655068" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2655068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -291,14 +311,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Arrumada função de printar a pilha e os navios" />
     <MESSAGE value="Arrumada função de printar a pilha e os navios e dado inicio a criar a função de descarregar navio" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arrumada função de printar a pilha e os navios e dado inicio a criar a função de descarregar navio" />
+    <MESSAGE value="Navios entrando e saindo do porto partindo do princiopio que o porto está cheio no inicio de um Dia" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navios entrando e saindo do porto partindo do princiopio que o porto está cheio no inicio de um Dia" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Porto.java</url>
-          <line>78</line>
+          <line>80</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
@@ -307,58 +328,10 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Lista.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/PilhaDoca.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="e#83#84#0" expanded="true" />
-            <element signature="e#106#107#0" expanded="true" />
-            <element signature="e#150#151#0" expanded="true" />
-            <element signature="e#185#186#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Pilha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-          <folding>
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Doca.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-          <folding>
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Navio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-          <folding>
-            <element signature="e#1351#1352#0" expanded="true" />
-            <element signature="e#1422#1423#0" expanded="true" />
-          </folding>
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -366,17 +339,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="20" selection-start-column="20" selection-end-column="20" />
-          <folding>
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Porto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="66" column="40" lean-forward="true" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+        <state relative-caret-position="518">
+          <caret line="79" column="35" lean-forward="true" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/PilhaDoca.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <element signature="e#150#151#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Navio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="39" column="9" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="39" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Pilha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Doca.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="126" column="74" selection-start-line="126" selection-start-column="74" selection-end-line="126" selection-end-column="74" />
+          <folding>
+            <element signature="e#2060#2061#0" expanded="true" />
+            <element signature="e#2091#2092#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

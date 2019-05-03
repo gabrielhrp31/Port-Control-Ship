@@ -3,7 +3,8 @@ package com.company;
 public class PilhaDoca extends Pilha{
 
     public PilhaDoca(){
-        super();
+        this.topo=null;
+        this.tam = 0;
     }
 
     @Override

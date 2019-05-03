@@ -29,8 +29,6 @@ public class Porto {
         ultimo_id++;
         return this.ultimo_id;
     }
-
-
     public Boolean cheio(){
         return qtdNavios==12;
     }
@@ -56,26 +54,30 @@ public class Porto {
     }
 
     public void inicia(int tempo){
-        while(true){
+        while(!d1.armazenamentoCheio() && !d2.armazenamentoCheio() && !d3.armazenamentoCheio() && !d4.armazenamentoCheio()){
             clrscr();
             showPorto();
             if(!cheio()) {
                 while (!cheio())
                     chega();
             }
-            if(!d1.vazia())
+            if(!d1.vazia() && !d1.armazenamentoCheio())
                 if(d1.descarregaNavio())
                     qtdNavios--;
-            if(!d2.vazia())
+            if(!d2.vazia() && !d2.armazenamentoCheio())
                 if(d2.descarregaNavio())
                     qtdNavios--;
-            if(!d3.vazia())
+            if(!d3.vazia() && !d3.armazenamentoCheio())
                 if(d3.descarregaNavio())
                     qtdNavios--;
-            if(!d4.vazia())
+            if(!d4.vazia() && !d4.armazenamentoCheio())
                 if(d4.descarregaNavio())
                     qtdNavios--;
             try { Thread.sleep (tempo); } catch (InterruptedException ex) {}
+            d1.setTempoDecorrido();
+            d2.setTempoDecorrido();
+            d3.setTempoDecorrido();
+            d4.setTempoDecorrido();
         }
     }
 
