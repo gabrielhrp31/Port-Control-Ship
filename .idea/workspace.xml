@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8b9c513-c305-4317-bef5-ecd286d2c3da" name="Default Changelist" comment="Navios entrando e saindo do porto partindo do princiopio que o porto está cheio no inicio de um Dia">
+    <list default="true" id="c8b9c513-c305-4317-bef5-ecd286d2c3da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Armazenamento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Container.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Container.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Doca.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Doca.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/PilhaDoca.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/PilhaDoca.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Porto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Porto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Container.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Doca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Doca.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/PilhaDoca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/PilhaDoca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Navio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Navio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/PilhaDoca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/PilhaPorto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Porto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Porto.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,33 +30,38 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Doca.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Doca.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Armazenamento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="126" column="74" selection-start-line="126" selection-start-column="74" selection-end-line="126" selection-end-column="74" />
+            <state relative-caret-position="85">
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
               <folding>
-                <element signature="e#2060#2061#0" expanded="true" />
-                <element signature="e#2091#2092#0" expanded="true" />
+                <element signature="e#110#111#0" expanded="true" />
+                <element signature="e#129#130#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/PilhaDoca.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/PilhaPorto.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-              <folding>
-                <element signature="e#150#151#0" expanded="true" />
-                <element signature="e#185#186#0" expanded="true" />
-              </folding>
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -57,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Pilha.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="569">
+              <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
               <folding>
                 <element signature="e#233#234#0" expanded="true" />
                 <element signature="e#268#269#0" expanded="true" />
@@ -70,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Navio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-162">
-              <caret line="39" column="9" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="39" selection-end-column="9" />
+            <state relative-caret-position="1411">
+              <caret line="85" column="1" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -79,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Container.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-start-column="20" selection-end-column="20" />
+            <state relative-caret-position="187">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -88,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Porto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="79" column="35" lean-forward="true" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+            <state relative-caret-position="85">
+              <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="6" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -111,13 +123,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/company/Lista.java" />
         <option value="$PROJECT_DIR$/src/com/company/Fila.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Container.java" />
         <option value="$PROJECT_DIR$/src/com/company/Pilha.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Navio.java" />
         <option value="$PROJECT_DIR$/src/com/company/PilhaDoca.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Container.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Navio.java" />
         <option value="$PROJECT_DIR$/src/com/company/Porto.java" />
+        <option value="$PROJECT_DIR$/src/com/company/PilhaPorto.java" />
         <option value="$PROJECT_DIR$/src/com/company/Doca.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Armazenamento.java" />
       </list>
     </option>
   </component>
@@ -225,7 +239,12 @@
       <workItem from="1556669910652" duration="4020000" />
       <workItem from="1556731155856" duration="420000" />
       <workItem from="1556741508915" duration="13369000" />
-      <workItem from="1556835969802" duration="3625000" />
+      <workItem from="1556835969802" duration="3713000" />
+      <workItem from="1557114910923" duration="1301000" />
+      <workItem from="1557342788137" duration="637000" />
+      <workItem from="1557791532906" duration="908000" />
+      <workItem from="1557861928669" duration="112000" />
+      <workItem from="1557971848323" duration="1941000" />
     </task>
     <task id="LOCAL-00001" summary="Arrumada função de printar a pilha e os navios e dado inicio a criar a função de descarregar navio">
       <created>1556744396085</created>
@@ -241,24 +260,31 @@
       <option name="project" value="LOCAL" />
       <updated>1556757768547</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Funcionando Perfeitamente e calculando a média(Conferir se está terminado)">
+      <created>1556853167696</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556853167696</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35582000" />
+    <option name="totallyTimeSpent" value="40569000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2655068" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28668684" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" x="0" y="23" width="1366" height="745" id="Run" maximized="true" order="2" type="WINDOWED" visible="true" weight="0.35114503" />
+      <window_info anchor="bottom" x="20" y="269" width="1326" height="230" id="Run" maximized="true" order="2" type="WINDOWED" weight="0.35114503" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39938557" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -312,14 +338,15 @@
     <MESSAGE value="Arrumada função de printar a pilha e os navios" />
     <MESSAGE value="Arrumada função de printar a pilha e os navios e dado inicio a criar a função de descarregar navio" />
     <MESSAGE value="Navios entrando e saindo do porto partindo do princiopio que o porto está cheio no inicio de um Dia" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navios entrando e saindo do porto partindo do princiopio que o porto está cheio no inicio de um Dia" />
+    <MESSAGE value="Funcionando Perfeitamente e calculando a média(Conferir se está terminado)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funcionando Perfeitamente e calculando a média(Conferir se está terminado)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Porto.java</url>
-          <line>80</line>
+          <line>136</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
@@ -328,49 +355,38 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Lista.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Navio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="1411">
+          <caret line="85" column="1" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Container.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        <state relative-caret-position="187">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Porto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="79" column="35" lean-forward="true" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+        <state relative-caret-position="85">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="6" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/PilhaDoca.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding>
-            <element signature="e#150#151#0" expanded="true" />
-            <element signature="e#185#186#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Navio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="39" column="9" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="39" selection-end-column="9" />
+        <state relative-caret-position="153">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Pilha.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="569">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
           <folding>
             <element signature="e#233#234#0" expanded="true" />
             <element signature="e#268#269#0" expanded="true" />
@@ -378,13 +394,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/PilhaPorto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Doca.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="126" column="74" selection-start-line="126" selection-start-column="74" selection-end-line="126" selection-end-column="74" />
+        <state relative-caret-position="391">
+          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Armazenamento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
           <folding>
-            <element signature="e#2060#2061#0" expanded="true" />
-            <element signature="e#2091#2092#0" expanded="true" />
+            <element signature="e#110#111#0" expanded="true" />
+            <element signature="e#129#130#0" expanded="true" />
           </folding>
         </state>
       </provider>

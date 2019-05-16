@@ -4,14 +4,21 @@ import java.util.Random;
 
 public class Porto {
     Doca d1,d2,d3,d4;
+    PilhaPorto pd1,pd2,pd3,pd4,pd5;
     private int ultimo_id;
     int qtdNavios;
+    int containersArmazenados;
 
     public Porto(){
         d1 = new Doca();
         d2 = new Doca();
         d3 = new Doca();
         d4 = new Doca();
+        pd1 = new PilhaPorto();
+        pd2 = new PilhaPorto();
+        pd3 = new PilhaPorto();
+        pd4 = new PilhaPorto();
+        pd5 = new PilhaPorto();
         ultimo_id=0;
         this.qtdNavios=0;
         Random random = new Random(System.nanoTime());
@@ -24,6 +31,50 @@ public class Porto {
             chega();
         }
     }
+
+
+
+
+    public Boolean armazenamentoCheio(){
+        return pd1.cheia() && pd2.cheia() && pd3.cheia() && pd4.cheia() && pd5.cheia();
+    }
+
+
+    public Boolean armazenamentoVazio(){
+        return (pd1.vazia() && pd2.vazia() && pd3.vazia() && pd4.vazia() && pd5.vazia());
+    }
+
+
+
+    public  void desempilhaDoPorto(){
+        if(!pd1.vazia()){
+            pd1.desempilha();
+        }else if(!pd2.vazia()){
+            pd2.desempilha();
+        }else if(!pd3.vazia()){
+            pd3.desempilha();
+        } else if(!pd4.vazia()){
+            pd4.desempilha();
+        } else if(!pd5.vazia()){
+            pd5.desempilha();
+        }
+    }
+
+    public void empilhaNoPorto(Container container){
+        if(!(this.pd1.cheia())){
+            this.pd1.empilha(container);
+        }else if(!(this.pd2.cheia())){
+            this.pd2.empilha(container);
+        }else if(!(this.pd3.cheia())){
+            this.pd3.empilha(container);
+        }else if(!(this.pd4.cheia())){
+            this.pd4.empilha(container);
+        }else if(!(this.pd5.cheia())){
+            this.pd5.empilha(container);
+        }
+        containersArmazenados++;
+    }
+
 
     private int getId(){
         ultimo_id++;
@@ -54,25 +105,30 @@ public class Porto {
     }
 
     public void inicia(int tempo){
-        while(!d1.armazenamentoCheio() && !d2.armazenamentoCheio() && !d3.armazenamentoCheio() && !d4.armazenamentoCheio()){
+        while(true){
             clrscr();
             showPorto();
             if(!cheio()) {
                 while (!cheio())
                     chega();
             }
-            if(!d1.vazia() && !d1.armazenamentoCheio())
-                if(d1.descarregaNavio())
+            if(!armazenamentoCheio()){
+                Container d1Saiu,d2Saiu,d3Saiu,d4Saiu;
+                d1Saiu=d1.descarregaNavio();
+                d2Saiu=d2.descarregaNavio();
+                d3Saiu=d3.descarregaNavio();
+                d4Saiu=d4.descarregaNavio();
+                if(d1Saiu==null)
                     qtdNavios--;
-            if(!d2.vazia() && !d2.armazenamentoCheio())
-                if(d2.descarregaNavio())
+                else
+
+                if(d2Saiu==null)
                     qtdNavios--;
-            if(!d3.vazia() && !d3.armazenamentoCheio())
-                if(d3.descarregaNavio())
+                if(d3Saiu==null)
                     qtdNavios--;
-            if(!d4.vazia() && !d4.armazenamentoCheio())
-                if(d4.descarregaNavio())
+                if(d4Saiu==null)
                     qtdNavios--;
+            }
             try { Thread.sleep (tempo); } catch (InterruptedException ex) {}
             d1.setTempoDecorrido();
             d2.setTempoDecorrido();
@@ -87,6 +143,13 @@ public class Porto {
     }
 
     public void showPorto(){
+        System.out.println("---------Armazenamento do Porto---------");
+        System.out.println("\tContainers Armazenados: " +containersArmazenados);
+        System.out.print("\tArmazenamento 1: ");pd1.showPilha();
+        System.out.print("\tArmazenamento 2: ");pd2.showPilha();
+        System.out.print("\tArmazenamento 3: ");pd3.showPilha();
+        System.out.print("\tArmazenamento 4: ");pd4.showPilha();
+        System.out.print("\tArmazenamento 5: ");pd5.showPilha();
         System.out.println("--------------Doca 1-------------------");
         d1.showDoca();
         System.out.println("--------------Doca 2-------------------");

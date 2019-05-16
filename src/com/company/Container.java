@@ -9,7 +9,5 @@ class Container{
         this.inferior = null;
     }
 
-    public String getStatus() {
-        return status ? "Cheio":"Vazio";
-    }
+    public String getStatus() { return status ? "Cheio":"Vazio"; }
 }
