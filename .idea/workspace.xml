@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c8b9c513-c305-4317-bef5-ecd286d2c3da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Doca.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Doca.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/PilhaDoca.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Porto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalhoo Prático/com/company/Porto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Armazenamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Armazenamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Doca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Doca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/PilhaPorto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/PilhaArmazenamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Porto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Porto.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,17 +26,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Doca.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
+            <state relative-caret-position="-116">
               <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Armazenamento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-272">
-              <caret line="21" column="110" selection-start-line="21" selection-start-column="110" selection-end-line="21" selection-end-column="110" />
+            <state relative-caret-position="272">
+              <caret line="72" column="61" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -87,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Porto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="1142">
               <caret line="104" column="35" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -131,8 +125,8 @@
         <option value="$PROJECT_DIR$/src/com/company/Navio.java" />
         <option value="$PROJECT_DIR$/src/com/company/PilhaPorto.java" />
         <option value="$PROJECT_DIR$/src/com/company/Doca.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Armazenamento.java" />
         <option value="$PROJECT_DIR$/src/com/company/Porto.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Armazenamento.java" />
       </list>
     </option>
   </component>
@@ -245,7 +239,7 @@
       <workItem from="1557342788137" duration="637000" />
       <workItem from="1557791532906" duration="908000" />
       <workItem from="1557861928669" duration="112000" />
-      <workItem from="1557971848323" duration="5064000" />
+      <workItem from="1557971848323" duration="6632000" />
     </task>
     <task id="LOCAL-00001" summary="Arrumada função de printar a pilha e os navios e dado inicio a criar a função de descarregar navio">
       <created>1556744396085</created>
@@ -275,15 +269,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557973859206</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Faltando arrumar problema do container ficar isolado na quarta fila que é quase inutil">
+      <created>1557976951184</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557976951184</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43692000" />
+    <option name="totallyTimeSpent" value="45260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28668684" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -348,7 +348,8 @@
     <MESSAGE value="Navios entrando e saindo do porto partindo do princiopio que o porto está cheio no inicio de um Dia" />
     <MESSAGE value="Funcionando Perfeitamente e calculando a média(Conferir se está terminado)" />
     <MESSAGE value="Criado a classe armazenamento pra poder integrar o armazem de todos as docas em um porto só e tambem trocados alguns metodos da doca para o porto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criado a classe armazenamento pra poder integrar o armazem de todos as docas em um porto só e tambem trocados alguns metodos da doca para o porto" />
+    <MESSAGE value="Faltando arrumar problema do container ficar isolado na quarta fila que é quase inutil" />
+    <option name="LAST_COMMIT_MESSAGE" value="Faltando arrumar problema do container ficar isolado na quarta fila que é quase inutil" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -409,27 +410,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Armazenamento.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Porto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="21" column="110" selection-start-line="21" selection-start-column="110" selection-end-line="21" selection-end-column="110" />
+        <state relative-caret-position="1142">
+          <caret line="104" column="35" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Doca.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
+        <state relative-caret-position="-116">
           <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Porto.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Armazenamento.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="104" column="35" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="72" column="61" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
         </state>
       </provider>
     </entry>

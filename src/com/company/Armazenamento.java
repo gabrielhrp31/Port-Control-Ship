@@ -4,6 +4,7 @@ public class Armazenamento {
     int tempoDescarregando;
     int containersArmazenados;
     PilhaArmazenamento pd1,pd2,pd3,pd4,pd5;
+    int ultimaDesempilhada;
 
     public Armazenamento(){
         pd1 = new PilhaArmazenamento();
@@ -12,6 +13,7 @@ public class Armazenamento {
         pd4 = new PilhaArmazenamento();
         pd5 = new PilhaArmazenamento();
         this.tempoDescarregando=0;
+        this.ultimaDesempilhada=0;
     }
 
     public Boolean armazenamentoCheio(){
@@ -34,31 +36,41 @@ public class Armazenamento {
     }
 
     public void esvaziaTravessa(){
-        if(pd5.cheia())
+        if(pd5.cheia()){
             pd5.desempilha();
-        else if(pd4.cheia())
+            this.ultimaDesempilhada=5;
+        }
+        else if(pd4.cheia()){
             pd4.desempilha();
-        else if(pd3.cheia())
+            this.ultimaDesempilhada=4;
+        }
+        else if(pd3.cheia()){
             pd3.desempilha();
-        else if(pd2.cheia())
+            this.ultimaDesempilhada=3;
+        }
+        else if(pd2.cheia()){
             pd2.desempilha();
-        else if(pd1.cheia())
+            this.ultimaDesempilhada=2;
+        }
+        else if(pd1.cheia()){
             pd1.desempilha();
+            this.ultimaDesempilhada=1;
+        }
         this.containersArmazenados-=5;
     }
 
 
 
     public void empilhaNaTravessa(Container container){
-        if(!(this.pd1.cheia())){
+        if(!(this.pd1.cheia()) && ultimaDesempilhada<=1){
             this.pd1.empilha(container);
-        }else if(!(this.pd2.cheia())){
+        }else if(!(this.pd2.cheia()) && ultimaDesempilhada<=2){
             this.pd2.empilha(container);
-        }else if(!(this.pd3.cheia())){
+        }else if(!(this.pd3.cheia()) && ultimaDesempilhada<=3){
             this.pd3.empilha(container);
-        }else if(!(this.pd4.cheia())){
+        }else if(!(this.pd4.cheia()) && ultimaDesempilhada<=4){
             this.pd4.empilha(container);
-        }else{
+        }else  if(!(this.pd5.cheia()) && ultimaDesempilhada<=5){
             this.pd5.empilha(container);
         }
         containersArmazenados++;
