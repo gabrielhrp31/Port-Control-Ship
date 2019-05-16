@@ -48,7 +48,6 @@ class Doca {
 
     public Container descarregaNavio(){
         Container desempilhado=null;
-        boolean saiu=false;
         if(this.primeiro.vazio()){
             //se o navio estiver vazio tira o mesmo da doca
             //esse procedimento demanda de uma unidade de tempo
@@ -57,8 +56,6 @@ class Doca {
             //desempilha o container do primeiro da fila e então empilha no armazenamento da doca
             desempilhado=this.primeiro.desempilha();
             return desempilhado;
-            // verifica se há algum container armazenado na doca  e se foram decorridas duas unidades de tempo
-            // então desempilha 1 container
         }
 
         return desempilhado;

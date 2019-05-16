@@ -1,8 +1,8 @@
 package com.company;
 
-public class PilhaPorto extends Pilha{
+public class PilhaArmazenamento extends Pilha{
 
-    public PilhaPorto(){
+    public PilhaArmazenamento(){
         this.topo=null;
         this.tam = 0;
     }
