@@ -4,6 +4,7 @@ class Pilha {
     Container topo;
     int tam;
 
+    //inicializa uma pilha
     public Pilha(){
         this.topo=null;
         this.tam = 0;
@@ -13,14 +14,18 @@ class Pilha {
         return  this.tam==4;
     }
 
+
     public Boolean vazia(){
         return  this.tam==0;
     }
 
+    //verifica se tem espaço na pilha
     public Boolean temEspaco(){
         return  this.tam<4;
     }
 
+
+    //empilha o conteiner passado por parametro na pilha
     public void empilha(Container container){
         container.inferior=this.topo;
         this.topo= container;
@@ -28,6 +33,7 @@ class Pilha {
     }
 
 
+    //desempilha o container do topo da pilha
     public Container desempilha(){
         Container desempilhado = this.topo;
         this.topo=this.topo.inferior;
@@ -35,6 +41,8 @@ class Pilha {
         return desempilhado;
     }
 
+
+    //mostra pilha
     public void showPilha(){
         Container aux = this.topo;
         System.out.print("[");

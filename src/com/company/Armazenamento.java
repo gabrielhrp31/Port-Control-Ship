@@ -6,6 +6,7 @@ public class Armazenamento {
     PilhaArmazenamento pd1,pd2,pd3,pd4,pd5;
     int ultimaDesempilhada;
 
+    //inicializa o armazenamento vazio
     public Armazenamento(){
         pd1 = new PilhaArmazenamento();
         pd2 = new PilhaArmazenamento();
@@ -16,29 +17,34 @@ public class Armazenamento {
         this.ultimaDesempilhada=0;
     }
 
+//    verifica se o armaezenamento está cheio
     public Boolean armazenamentoCheio(){
         return pd1.cheia() && pd2.cheia() && pd3.cheia() && pd4.cheia() && pd5.cheia();
     }
-    
+
+//    verifica se alguma travessa enchu para saber se pode desempilhar a mesma
     public Boolean podeDesempilhar(){
         return (pd1.cheia() || pd2.cheia() || pd3.cheia() || pd4.cheia() || pd5.cheia() && tempoDescarregando==0);
     }
 
 
+//    verifica se o armazenamento está vazio
     public Boolean armazenamentoVazio(){
         return (pd1.vazia() && pd2.vazia() && pd3.vazia() && pd4.vazia() && pd5.vazia());
     }
 
+//    muda o tempo em que o carrinho está descarregando
     public void setTempoDescarregando() {
         if(tempoDescarregando==2)
             this.tempoDescarregando=0;
         this.tempoDescarregando++;
     }
 
+//    esvazia uma travessa e guarda a ultima descarregada para evitar envelhecimento de conteiners no porto
     public void esvaziaTravessa(){
         if(pd5.cheia()){
             pd5.desempilha();
-            this.ultimaDesempilhada=5;
+            this.ultimaDesempilhada=1;
         }
         else if(pd4.cheia()){
             pd4.desempilha();
@@ -60,7 +66,7 @@ public class Armazenamento {
     }
 
 
-
+//  empilha na travessa o container passado por parametro
     public void empilhaNaTravessa(Container container){
         if(!(this.pd1.cheia()) && ultimaDesempilhada<=1){
             this.pd1.empilha(container);
@@ -76,6 +82,7 @@ public class Armazenamento {
         containersArmazenados++;
     }
 
+    // mostra o armazenamento
     public void showArmazenamento(){
         System.out.println("\tContainers Armazenados: " +containersArmazenados);
         System.out.print("\tArmazenamento 1: ");pd1.showPilha();

@@ -6,6 +6,7 @@ class Doca {
     int naviosDescarregados;
     float tempoMedio;
 
+    //inicia a doca
     public Doca(){
         this.primeiro=null;
         this.ultimo=null;
@@ -23,6 +24,8 @@ class Doca {
         return this.tam==0;
     }
 
+
+    //a adiciona um navio no final da fila
     public void chega(Navio navio){
         if(this.primeiro==null){
             this.primeiro=navio;
@@ -34,7 +37,7 @@ class Doca {
     }
 
 
-
+    //retira o primeiiro navio da fila apos descarregado
     public void sai(){
         this.primeiro = this.primeiro.prox;
         naviosDescarregados++;
@@ -42,10 +45,12 @@ class Doca {
         tam--;
     }
 
+    // aumenta o tempo passado na doca
     public void setTempoDecorrido(){
         tempoDecorrido++;
     }
 
+    //descarrega o navio e retorna o container desempilhado toda vez
     public Container descarregaNavio(){
         Container desempilhado=null;
         if(this.primeiro.vazio()){
@@ -61,6 +66,8 @@ class Doca {
         return desempilhado;
     }
 
+
+    //mostra a doca na tela
     public void showDoca(){
 
         if(vazia()){

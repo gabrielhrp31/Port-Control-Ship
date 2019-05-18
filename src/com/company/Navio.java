@@ -8,6 +8,7 @@ public class Navio {
     Navio prox;
     int qtdContainers;
 
+    //realizaçã a inicialização do navio colocado a quatidade de containers empilhada e sorteando o status de cada um
     public Navio(int id, int qtdContainers){
         this.p1 = new Pilha();
         this.p2 = new Pilha();
@@ -44,6 +45,8 @@ public class Navio {
         return qtdContainers==0;
     }
 
+
+//    desempilha um container do navio verificando qual fila ainda nn esta vazia e retorna o container desempilhado
     public Container desempilha(){
         Container desempilhado;
         if(!p4.vazia()) {
@@ -64,6 +67,7 @@ public class Navio {
         return  desempilhado;
     }
 
+//    mostra o navio na tela e a quantidade de containers em cada pilha se houverem containers na mesma
     public void showNavio(){
         if(!p1.vazia()){
             System.out.print("\t\t|Pilha 1->");
